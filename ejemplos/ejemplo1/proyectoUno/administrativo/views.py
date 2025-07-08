@@ -72,7 +72,7 @@ def obtener_estudiante(request, id):
 
 
 # @login_required(login_url='/entrando/login/')
-@login_required
+@login_required         # para que el usuario esté autenticado, porque ya lo referenciamos en el settings.py
 @permission_required('administrativo.add_estudiante', )
 # @permission_required('administrativo.add_estudiante', login_url="/entrando/login/")
 def crear_estudiante(request):
@@ -141,7 +141,7 @@ def crear_numero_telefonico(request):
 
     return render(request, 'crearNumeroTelefonico.html', diccionario)
 
-
+@en_grupo('supervisor')
 def editar_numero_telefonico(request, id):
     """
     """
@@ -158,6 +158,8 @@ def editar_numero_telefonico(request, id):
 
     return render(request, 'crearNumeroTelefonico.html', diccionario)
 
+
+@en_grupo('supervisor')
 def crear_numero_telefonico_estudiante(request, id):
     """
     """
