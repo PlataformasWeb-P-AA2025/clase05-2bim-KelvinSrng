@@ -27,3 +27,8 @@
 2.1 settings.py
 
 2.2 templates
+
+
+## Captura GitHub acount
+![imagen](https://github.com/user-attachments/assets/a113bf82-a1b9-479e-93fd-9449b9d21742)
+![imagen](https://github.com/user-attachments/assets/b78bb0e4-f25f-4fda-8c11-d3da60705f25)
